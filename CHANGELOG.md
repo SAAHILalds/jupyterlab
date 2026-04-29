@@ -603,6 +603,49 @@ To ease code migration to JupyterLab 4, developers should review the [migration 
 
 <!-- <START NEW CHANGELOG ENTRY> -->
 
+## 4.5.7
+
+([Full Changelog](https://github.com/jupyterlab/jupyterlab/compare/v4.5.6...66fe9adfc1d501d1368404037f26925870741933))
+
+### Enhancements made
+
+- Update default font family to honor macOS system-wide ui-monospace [#18647](https://github.com/jupyterlab/jupyterlab/pull/18647) ([@flaviomartins](https://github.com/flaviomartins))
+
+### Bugs fixed
+
+- Video and Audio Content Providers: Fix JupyterLite support [#18652](https://github.com/jupyterlab/jupyterlab/pull/18652) ([@martinRenou](https://github.com/martinRenou))
+- Fix notebook hang when dropping cells [#18808](https://github.com/jupyterlab/jupyterlab/pull/18808) ([@MUFFANUJ](https://github.com/MUFFANUJ))
+- Fix Contextual Help keyboard shortcut reliability and menu Help functionality [#18747](https://github.com/jupyterlab/jupyterlab/pull/18747) ([@itsmejay80](https://github.com/itsmejay80))
+- Fix focusing input element when opening a dialog from Command Palette [#18735](https://github.com/jupyterlab/jupyterlab/pull/18735) ([@Carreau](https://github.com/Carreau))
+- Fix native context menu blocked even when context menu is suppressed [#18753](https://github.com/jupyterlab/jupyterlab/pull/18753) ([@utsav-develops](https://github.com/utsav-develops))
+- Fix flaky toolbar item placement in popup [#18618](https://github.com/jupyterlab/jupyterlab/pull/18618) ([@filipeoliveira05](https://github.com/filipeoliveira05))
+
+### Maintenance and upkeep improvements
+
+- Fix linting issue [#18819](https://github.com/jupyterlab/jupyterlab/pull/18819) ([@krassowski](https://github.com/krassowski))
+- Fix syntax for Python 3.9 on `4.5.x` branch [#18817](https://github.com/jupyterlab/jupyterlab/pull/18817) ([@krassowski](https://github.com/krassowski))
+- Remove unused CodeMirror v5 CSS rule [#18785](https://github.com/jupyterlab/jupyterlab/pull/18785) ([@Carreau](https://github.com/Carreau))
+- Remove unused CSS rule forgotten after CodeMirror migration [#18763](https://github.com/jupyterlab/jupyterlab/pull/18763) ([@Carreau](https://github.com/Carreau))
+- Remove unused progress bar CSS rule in execution indicator [#18759](https://github.com/jupyterlab/jupyterlab/pull/18759) ([@Carreau](https://github.com/Carreau))
+- Remove dead `.jp-VariableRenderer-TrustButton` CSS rule [#18762](https://github.com/jupyterlab/jupyterlab/pull/18762) ([@Carreau](https://github.com/Carreau))
+- Remove used `.jp-Cell-Placeholder` CSS rules [#18761](https://github.com/jupyterlab/jupyterlab/pull/18761) ([@Carreau](https://github.com/Carreau))
+
+### Documentation improvements
+
+- Fix name of option for extension manager implementation in docs [#18788](https://github.com/jupyterlab/jupyterlab/pull/18788) ([@krassowski](https://github.com/krassowski))
+- Remove 4.5.0 announcement from docs [#18740](https://github.com/jupyterlab/jupyterlab/pull/18740) ([@krassowski](https://github.com/krassowski))
+
+### Contributors to this release
+
+The following people contributed discussions, new ideas, code and documentation contributions, and review.
+See [our definition of contributors](https://github-activity.readthedocs.io/en/latest/use/#how-does-this-tool-define-contributions-in-the-reports).
+
+([GitHub contributors page for this release](https://github.com/jupyterlab/jupyterlab/graphs/contributors?from=2026-03-11&to=2026-04-29&type=c))
+
+@Carreau ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3ACarreau+updated%3A2026-03-11..2026-04-29&type=Issues)) | @filipeoliveira05 ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Afilipeoliveira05+updated%3A2026-03-11..2026-04-29&type=Issues)) | @flaviomartins ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Aflaviomartins+updated%3A2026-03-11..2026-04-29&type=Issues)) | @itsmejay80 ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Aitsmejay80+updated%3A2026-03-11..2026-04-29&type=Issues)) | @jtpio ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Ajtpio+updated%3A2026-03-11..2026-04-29&type=Issues)) | @krassowski ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Akrassowski+updated%3A2026-03-11..2026-04-29&type=Issues)) | @martinRenou ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3AmartinRenou+updated%3A2026-03-11..2026-04-29&type=Issues)) | @MUFFANUJ ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3AMUFFANUJ+updated%3A2026-03-11..2026-04-29&type=Issues)) | @utsav-develops ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Autsav-develops+updated%3A2026-03-11..2026-04-29&type=Issues))
+
+<!-- <END NEW CHANGELOG ENTRY> -->
+
 ## 4.5.6
 
 ([Full Changelog](https://github.com/jupyterlab/jupyterlab/compare/v4.5.5...a6dda8829b2d6b670de634081d26c1a39be145c4))
@@ -629,8 +672,6 @@ See [our definition of contributors](https://github-activity.readthedocs.io/en/l
 ([GitHub contributors page for this release](https://github.com/jupyterlab/jupyterlab/graphs/contributors?from=2026-02-23&to=2026-03-11&type=c))
 
 @agriyakhetarpal ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Aagriyakhetarpal+updated%3A2026-02-23..2026-03-11&type=Issues)) | @IsabelParedes ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3AIsabelParedes+updated%3A2026-02-23..2026-03-11&type=Issues)) | @jtpio ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Ajtpio+updated%3A2026-02-23..2026-03-11&type=Issues)) | @krassowski ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Akrassowski+updated%3A2026-02-23..2026-03-11&type=Issues)) | @soniya-malviy ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Asoniya-malviy+updated%3A2026-02-23..2026-03-11&type=Issues)) | @tmetzl ([activity](https://github.com/search?q=repo%3Ajupyterlab%2Fjupyterlab+involves%3Atmetzl+updated%3A2026-02-23..2026-03-11&type=Issues))
-
-<!-- <END NEW CHANGELOG ENTRY> -->
 
 ## 4.5.5
 
