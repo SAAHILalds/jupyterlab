@@ -836,6 +836,8 @@ const sanitizer: JupyterFrontEndPlugin<IRenderMime.ISanitizer> = {
       const autolink = setting.get('autolink').composite as boolean;
       const allowNamedProperties = setting.get('allowNamedProperties')
         .composite as boolean;
+      const allowCommandLinker = setting.get('allowCommandLinker')
+        .composite as boolean;
 
       if (allowedSchemes) {
         sanitizer.setAllowedSchemes(allowedSchemes);
@@ -843,6 +845,7 @@ const sanitizer: JupyterFrontEndPlugin<IRenderMime.ISanitizer> = {
 
       sanitizer.setAutolink(autolink);
       sanitizer.setAllowNamedProperties(allowNamedProperties);
+      sanitizer.setAllowCommandLinker(allowCommandLinker);
     };
 
     // Wait for the application to be restored and

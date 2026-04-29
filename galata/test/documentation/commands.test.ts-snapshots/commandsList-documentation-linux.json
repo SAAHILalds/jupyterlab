@@ -3544,6 +3544,16 @@
     }
   },
   {
+    "id": "markdownviewer:trust",
+    "label": "Trust Markdown Preview",
+    "caption": "",
+    "shortcuts": [],
+    "args": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
     "id": "mathjax:clipboard",
     "label": "MathJax Copy Latex",
     "caption": "",
